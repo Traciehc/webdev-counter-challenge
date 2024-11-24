@@ -10,19 +10,24 @@ const decrementBtn = document.querySelector(".decrement-btn");
 
 function incrementCount() {
     // Write the relevant code in this block
+    count++; 
+    updateCount();
+    
 
 }
 
 
 function decrementCount() {
     // Write the relevant code in this block
-
+    count--; 
+    updateCount();
 }
 
 
 function resetCount() {
     // Write the relevant code in this block
-    
+    count = 0; 
+    updateCount();
 }
 
 function renderUpdatedCount() {
@@ -31,7 +36,7 @@ function renderUpdatedCount() {
 
 incrementBtn.addEventListener("click", function () {
     // Write code below this line
-
+incrementBtn.addEventListener("click", incrementCount);
 
 
     // STOP HERE
@@ -42,7 +47,7 @@ incrementBtn.addEventListener("click", function () {
 
 resetBtn.addEventListener("click", function () {
     // Write code below this line
-    
+    resetBtn.addEventListener("click", resetCount);
 
     // STOP HERE
     
@@ -52,7 +57,7 @@ resetBtn.addEventListener("click", function () {
 
 decrementBtn.addEventListener("click", function () {
     // Write code below this line
-
+    decrementBtn.addEventListener("click", decrementCount);
 
     // STOP HERE
 
