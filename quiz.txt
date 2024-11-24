@@ -1,5 +1,29 @@
 1. Why do you use "using strict" at the top of your JS files?
+
+    Because it changes the behavior of JavaScript and helps you write cleaner and more error free code.
+
 2. What does line 3 mean?
+
+    It means you declared the variable count and assigned 
+    it the value of 0.
+
 3. What is happening on lines 5-8 and why?
+
+    These lines are selecting and storing references to specific elements in the HTML, 
+    the reason for that is so that you can use these elements later in javascript by
+     manipulating them such as in the instance of adding event listeners as needed in 
+     response to user interactions.
+
 4. If you implemented the functionality of the buttons,
    why do you think I wrote the JS code the way I did?
+
+   Probably to make me question why it is not functioning.  It is not functioning because the 
+   eventListeners are inside of other eventListeners and need to be outside of the function to work.
+   Other than that I really don't have a clue.  
+  
+  
+   Also, I would be the first to admit that I have been having some trouble with the @media query.
+   The problem is with my understanding it and I am hoping that by playing around with them that it
+   will eventually click for me.
+
+   Thanks for all that you do, I hope you have a great Thanksgiving!
