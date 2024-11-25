@@ -7,13 +7,13 @@ const incrementBtn = document.querySelector(".increment-btn");
 const resetBtn = document.querySelector(".reset-btn");
 const decrementBtn = document.querySelector(".decrement-btn");
 
-
+function updateCount() { 
+    countElement.innerText = count; 
+}
 function incrementCount() {
     // Write the relevant code in this block
     count++; 
     updateCount();
-    
-
 }
 
 
@@ -34,7 +34,7 @@ function renderUpdatedCount() {
     countElement.innerText = count;
 }
 
-incrementBtn.addEventListener("click", function () {
+//incrementBtn.addEventListener("click", function () {
     // Write code below this line
 incrementBtn.addEventListener("click", incrementCount);
 
@@ -43,9 +43,9 @@ incrementBtn.addEventListener("click", incrementCount);
 
 
     renderUpdatedCount();
-});
 
-resetBtn.addEventListener("click", function () {
+
+//resetBtn.addEventListener("click", function () {
     // Write code below this line
     resetBtn.addEventListener("click", resetCount);
 
@@ -53,9 +53,9 @@ resetBtn.addEventListener("click", function () {
     
     
     renderUpdatedCount();
-});
 
-decrementBtn.addEventListener("click", function () {
+
+//decrementBtn.addEventListener("click", function () {
     // Write code below this line
     decrementBtn.addEventListener("click", decrementCount);
 
@@ -63,4 +63,4 @@ decrementBtn.addEventListener("click", function () {
 
 
     renderUpdatedCount();
-});
+
